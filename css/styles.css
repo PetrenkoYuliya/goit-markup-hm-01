@@ -7,7 +7,7 @@
 
 body {
     color: var(--first-title-color);
-    background-color:#F5F5F5;
+    background-color:#FFFFFF;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
@@ -25,8 +25,8 @@ body {
     text-decoration: none;
     color: #000000;
     }
-.logo .logo-footer: :hover {
-    color: var(--accent-color: #2196F3;)
+.logo .logo-footer:hover {
+    color: var(--accent-color)
 }
 
 .web {
@@ -66,6 +66,10 @@ body {
 }
 
 /*HERO------------------*/
+
+.hero {
+    background-color: #2F303A;
+}
 
 .hero-title {
     font-weight: 900;
@@ -172,7 +176,7 @@ body {
 
 
 .button.current {
-    color: #FFFFFF
+    color: #FFFFFF;
     background-color: var(--accent-color);
 }
 
@@ -208,6 +212,12 @@ body {
 .studio {
     color: #FFFFFF;
 }
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+    color: var(--accent-color);
+}
+
 
 .link {
     text-decoration: none;
