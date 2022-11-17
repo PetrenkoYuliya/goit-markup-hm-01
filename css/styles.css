@@ -4,6 +4,29 @@
     --accent-color: #2196F3;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
 
 body {
     color: var(--first-title-color);
@@ -12,11 +35,38 @@ body {
     letter-spacing: 0.03em;
 }
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .list {
     list-style: none;
     }
 
 .logo {
+    padding-top: 23px;
+    padding-bottom: 26px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -31,6 +81,12 @@ body {
 
 .web {
     color: #2196F3;
+}
+
+.site-nav {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
 }
 
 .site-nav .link {
@@ -51,6 +107,14 @@ body {
     color: var(--accent-color);
 }
 
+.site-сontact {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 50px;
+    margin: 0 0 0 auto;
+}
+
 .site-сontact .link {
     font-weight: 500;
     font-size: 14px;
@@ -65,13 +129,26 @@ body {
     color: var(--accent-color);
 }
 
+.link {
+    display: block;
+    
+    }
+
 /*HERO------------------*/
 
 .hero {
     background-color: #2F303A;
-}
+    padding-top: 200px;
+    padding-bottom: 200px;}
 
 .hero-title {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 696px;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -79,9 +156,16 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+  
 }
 
 /*SECTION-------------*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 
 .title-hidden {
     position: absolute;
@@ -96,10 +180,25 @@ body {
     margin: -1px;
 }
 
+.advantage-list  {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.advantage {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
 .section-title {
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: var(--first-title-color);
    
 }
@@ -110,6 +209,7 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--first-title-color);
+    margin-bottom: 10px;
     
   }
 
@@ -117,19 +217,64 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: var(--second-title-color);
+   
+}
+
+.activities.section {
+   padding-top: 0;
+}
+
+.activities-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.activities-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.team.section {
+    background: #F5F4FA;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-item {
+    background: #FFFFFF;
+    flex-basis: calc((100%-90px)/4);
+}
+
+.team-foto {
+    display: block;
+    min-width: 100%;
+}
+
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-item-title {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     color: var(--first-title-color);
+    text-align: center;
+    letter-spacing: 0.03em;    
 }
 
 .team-item-text {
     font-size: 16px;
     line-height: 1.19;
     color: var(--second-title-color);
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /*PORTFOLIO-------------*/ 
@@ -139,6 +284,7 @@ body {
 }
 
 .project-item-title {
+    margin-bottom: 4px
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -150,13 +296,55 @@ body {
 .project-item-text {
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.03em;
     color: var(--second-title-color);
     text-decoration: none;
 }
 
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-item {
+    background: #FFFFFF;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.project-foto {
+    display: block;
+    min-width: 100%;
+}
+
+.portfolio-title {
+    padding: 20px 24px 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;   
+}
+
+
+
 /*BUTTON------------------*/
 
+.container-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 .button {
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -165,7 +353,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--first-title-color);
     background-color: #F5F4FA;
-    cursor: pointer
+    cursor: pointer;
+       
 }
 
 .project-btn .button:hover,
@@ -181,20 +370,23 @@ body {
 }
 
 .hero-btn {
+    min-width:216px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color);
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
     border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%)
 }
 
 .hero-btn:hover,
@@ -206,7 +398,19 @@ body {
 /* FOOTER--------------------*/
 
 .contacts{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;    
     background-color: #2F303A;
+}
+
+.logo.footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .studio {
@@ -225,11 +429,14 @@ body {
 }
 
 .contacts-item {
+    margin-bottom: 9px;
     font-style: inherit;
     color: #FFFFFF;
 }
 
 .contacts-list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
 }
 
@@ -241,4 +448,6 @@ body {
 
 .contacts-link-bold {
     color: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 0;
 }
